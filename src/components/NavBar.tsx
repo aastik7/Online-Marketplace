@@ -53,6 +53,15 @@ export function NavBar() {
                 Home
               </a>
             </li>
+            <li>
+              <a
+                href="#"
+                className="block rounded bg-blue-700 px-3 py-2 text-white md:bg-transparent md:p-0 md:text-blue-700 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Sing in
+              </a>
+            </li>
 
             <li>
               <UserButton />
