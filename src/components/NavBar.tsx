@@ -1,3 +1,4 @@
+import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export function NavBar() {
@@ -83,6 +84,9 @@ export function NavBar() {
               >
                 Contact
               </a>
+            </li>
+            <li>
+              <UserButton />
             </li>
           </ul>
         </div>
