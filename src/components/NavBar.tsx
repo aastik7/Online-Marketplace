@@ -1,4 +1,4 @@
-import { UserButton } from "@clerk/nextjs";
+import { SignInButton, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export function NavBar() {
@@ -59,8 +59,12 @@ export function NavBar() {
                 className="block rounded bg-blue-700 px-3 py-2 text-white md:bg-transparent md:p-0 md:text-blue-700 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
               >
-                Sing in
+                Sing-in
               </a>
+
+              <SignInButton>
+                <span className="cursor-pointer text-white hover:text-blue-700 "></span>
+              </SignInButton>
             </li>
 
             <li>

@@ -23,7 +23,9 @@ export default function Home() {
             <span className="text-white">Sign Out</span>
           </SignOutButton>
         ) : (
-          <SignInButton>Sign In</SignInButton>
+          <SignInButton>
+            <span className="text-white">Sign In</span>
+          </SignInButton>
         )}
       </main>
     </>
