@@ -1,11 +1,19 @@
 import { authMiddleware } from "@clerk/nextjs";
 
+// Define your public routes
+const publicRoutes = [
+  "/",
+  "/anyone-can-visit-this-route",
+  "/api/trpc/post.hello",
+];
+
+// Define routes to be ignored by Clerk authentication
+const ignoredRoutes = ["/no-auth-in-this-route", "/api/trpc/post.hello"];
+
+// Apply the authMiddleware with the modified configuration
 export default authMiddleware({
-  // Routes that can be accessed while signed out
-  publicRoutes: ["/", "/anyone-can-visit-this-route"],
-  // Routes that can always be accessed, and have
-  // no authentication information
-  ignoredRoutes: ["/no-auth-in-this-route"],
+  publicRoutes,
+  ignoredRoutes,
 });
 
 export const config = {

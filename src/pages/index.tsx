@@ -1,6 +1,7 @@
 import { SignIn, SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 import Head from "next/head";
 import Link from "next/link";
+import { NavBar } from "~/components/NavBar";
 
 import { api } from "~/utils/api";
 
